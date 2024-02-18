@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js" defer></script>
+  <title>Library</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Library</h1>
+    <table class="list-of-books">
+      <thead>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Read</th>
+        <th>Delete</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="add" onclick="showForm()">Add a new book</button>
+
+    <form id="book-form" method="post">
+      <input type="text" name="title" id="title" placeholder="Title" required>
+      <input type="text" name="author" id="author" placeholder="Author" required>
+      <input type="text" name="pages" id="pages" placeholder="Number of pages" required>
+
+      <label for="read">Read</label>
+      <input type="checkbox" name="read" id="read">
+
+      <button class="save" type="submit">Save the Book</button>
+    </form>
+  </div>
+</body>
+
+</html>
